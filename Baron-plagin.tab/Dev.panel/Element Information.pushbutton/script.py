@@ -10,7 +10,8 @@ __doc__   = 'Показывает информацию об элементе'
 #Regular + Autodesk
 import clr
 from Autodesk.Revit.DB import *
-from pyrevit import forms
+from pyrevit import revit,forms
+
 
 # ╦  ╦╔═╗╦═╗╦╔═╗╔╗ ╦  ╔═╗╔═╗
 # ╚╗╔╝╠═╣╠╦╝║╠═╣╠╩╗║  ║╣ ╚═╗
@@ -27,9 +28,19 @@ app   = __revit__.Application
 # =============================================
 
 #Bonus: PyRevit Input
-selected_views = forms.select_views()
-if selected_views:
-    print(selected_views)
+# selected_views = forms.select_views()
+# if selected_views:
+#     print(selected_views)
 
 # Выбрать элемент
+element      = revit.pick_element()
+element_type = type(element)
+
+print(element)
+print(element_type)
 # Get information
+
+
+
+
+#pycharm Shortcut: CTRL + B
