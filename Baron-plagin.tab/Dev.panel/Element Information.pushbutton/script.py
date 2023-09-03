@@ -33,17 +33,26 @@ app   = __revit__.Application
 #     print(selected_views)
 
 # Выбрать элемент
+# ===============================================
 with forms.WarningBar(title='Выберите элемент:'):
-
-element = revit.pick_element()
-
+    element = revit.pick_element()
 element_type = type(element)
-
 print(element)
 print(element_type)
+
 # Get information
-
-
+# ===============================================
+e_cat         = element.Category
+e_id          = element.Id
+e_level_id    = element.LevelID
+e_wall_type   = element.WallType
+e_width       = element.Width
 
 
 #pycharm Shortcut: CTRL + B
+
+print('Element Category : {}'.format(e_cat))
+print('Element Id: {}'.format(e_id))
+print('Element LevelId: {}'.format(e_level_id))
+print('Wall WallType: {}'.format(e_wall_type))
+print('Wall Width: {}'.format(e_width))
