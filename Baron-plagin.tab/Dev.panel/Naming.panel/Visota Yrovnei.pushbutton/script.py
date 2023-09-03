@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__title__ = 'Высота уровня'
+__title__ = 'VISOTA YROVNya'
 __author__ = 'Abankin Dmitry'
 __doc__ = 'Dobavlenie visoti'
 __highlight__ = 'new'
