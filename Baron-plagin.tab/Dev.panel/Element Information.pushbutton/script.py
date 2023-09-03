@@ -9,7 +9,7 @@ __doc__   = 'Показывает информацию об элементе'
 # =============================================
 #Regular + Autodesk
 from Autodesk.Revit.DB import *
-
+from pyrevit import forms
 
 # ╦  ╦╔═╗╦═╗╦╔═╗╔╗ ╦  ╔═╗╔═╗
 # ╚╗╔╝╠═╣╠╦╝║╠═╣╠╩╗║  ║╣ ╚═╗
@@ -26,3 +26,13 @@ app   = __revit__.Application
 # =============================================
 if __name__ == '__main__':
     print('Hello World!')
+
+
+#Bonus: PyRevit Input
+selected_views = forms.select_views()
+if selected_views:
+    print(selected_views)
+
+# Выбрать элемент
+
+# Get information
