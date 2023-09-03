@@ -8,8 +8,9 @@ __doc__   = 'Показывает информацию об элементе'
 # ╩╩ ╩╩  ╚═╝╩╚═ ╩ IMPORT
 # =============================================
 #Regular + Autodesk
+import clr
 from Autodesk.Revit.DB import *
-from pyrevit import forms
+from pyrevit import *
 
 # ╦  ╦╔═╗╦═╗╦╔═╗╔╗ ╦  ╔═╗╔═╗
 # ╚╗╔╝╠═╣╠╦╝║╠═╣╠╩╗║  ║╣ ╚═╗
@@ -24,9 +25,6 @@ app   = __revit__.Application
 # ║║║╠═╣ ║ ║║║
 # ╩ ╩╩ ╩ ╩ ╝╚╝ MAIN
 # =============================================
-if __name__ == '__main__':
-    print('Hello World!')
-
 
 #Bonus: PyRevit Input
 selected_views = forms.select_views()
@@ -34,5 +32,4 @@ if selected_views:
     print(selected_views)
 
 # Выбрать элемент
-
 # Get information
