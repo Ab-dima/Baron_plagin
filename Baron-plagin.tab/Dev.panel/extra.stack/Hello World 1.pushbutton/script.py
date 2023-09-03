@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 
-__title__  = 'Выбранные элементы'
-__doc__    = 'Покажет выбранные элементы'
+__title__ = 'Выбранные элементы'
+__doc__ = 'Покажет выбранные элементы'
 
-
-#variables
+# variables
 uidoc = __revit__.ActiveUIDocument
-doc   = __revit__.ActiveUIDocument.Document
+doc = __revit__.ActiveUIDocument.Document
 
+# Custom imports
+from Snippets._selection import get_selected_elements
 
-#Custom imports
-from Snippets import _selection
-
-
-if __name__  == '__main__':
+if __name__ == '__main__':
     print(get_selected_elements(uidoc))
