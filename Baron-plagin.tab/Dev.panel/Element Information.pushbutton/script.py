@@ -44,7 +44,7 @@ print(element_type)
 # ===============================================
 e_cat         = element.Category
 e_id          = element.Id
-e_level_id    = element.LevelID
+e_level_id    = element.LevelId
 e_wall_type   = element.WallType
 e_width       = element.Width
 
