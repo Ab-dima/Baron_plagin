@@ -5,7 +5,7 @@ __doc__   = 'Показывает информацию об элементе'
 
 # ╦╔╦╗╔═╗╔═╗╦═╗╔╦╗
 # ║║║║╠═╝║ ║╠╦╝ ║
-# ╩╩ ╩╩  ╚═╝╩╚═ ╩
+# ╩╩ ╩╩  ╚═╝╩╚═ ╩ IMPORT
 # =============================================
 #Regular + Autodesk
 from Autodesk.Revit.DB import *
@@ -13,15 +13,16 @@ from Autodesk.Revit.DB import *
 
 # ╦  ╦╔═╗╦═╗╦╔═╗╔╗ ╦  ╔═╗╔═╗
 # ╚╗╔╝╠═╣╠╦╝║╠═╣╠╩╗║  ║╣ ╚═╗
-#  ╚╝ ╩ ╩╩╚═╩╩ ╩╚═╝╩═╝╚═╝╚═╝
+#  ╚╝ ╩ ╩╩╚═╩╩ ╩╚═╝╩═╝╚═╝╚═╝ VARIABLES
 # =============================================
 doc   = __revit__.ActiveUIDocument.Document
 uidoc = __revit__.ActiveUIDocument
-app   = __revit__.Aplication
+app   = __revit__.Application
 
 
 # ╔╦╗╔═╗ ╦ ╔╗╔
 # ║║║╠═╣ ║ ║║║
-# ╩ ╩╩ ╩ ╩ ╝╚╝
+# ╩ ╩╩ ╩ ╩ ╝╚╝ MAIN
 # =============================================
-print('Hello World!')
+if __name__ == '__main__':
+    print('Hello World!')
