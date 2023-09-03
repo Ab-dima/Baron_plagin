@@ -34,8 +34,9 @@ app   = __revit__.Application
 
 # Выбрать элемент
 with forms.WarningBar(title='Выберите элемент:'):
-    element = revit.pick_element()
-    
+
+element = revit.pick_element()
+
 element_type = type(element)
 
 print(element)
