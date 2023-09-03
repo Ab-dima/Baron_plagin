@@ -6,14 +6,10 @@ from Autodesk.Revit.DB import *
 uidoc = __revit__.ActiveUIDocument
 doc   = __revit__.ActiveUIDocument.Document
 
+
 # functions
 
-def get_selected_elelemnts(uidoc):
-    """
-
-    :param uidoc:
-    :return:
-    """
+def get_selected_elements(uidoc):
     selected_elements = []
 
     for elem_id in uidoc.Selection.GetElementIds():
