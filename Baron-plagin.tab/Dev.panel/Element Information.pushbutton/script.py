@@ -53,6 +53,6 @@ e_width       = element.Width
 
 print('Element Category : {}'.format(e_cat))
 print('Element Id: {}'.format(e_id))
-print('Element LevelId: {}'.format(e_level_id.Name))
+print('Element LevelId: {}'.format(e_level.Name))
 print('Wall WallType: {}'.format(e_wall_type))
 print('Wall Width: {}'.format(e_width))
