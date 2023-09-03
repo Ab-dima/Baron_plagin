@@ -42,9 +42,9 @@ print(element_type)
 
 # Get information
 # ===============================================
-e_cat         = element.Category
+e_cat         = element.Category.Name
 e_id          = element.Id
-e_level_id    = element.LevelId
+e_level       = doc.GetElement(element.LevelId)
 e_wall_type   = element.WallType
 e_width       = element.Width
 
@@ -53,6 +53,6 @@ e_width       = element.Width
 
 print('Element Category : {}'.format(e_cat))
 print('Element Id: {}'.format(e_id))
-print('Element LevelId: {}'.format(e_level_id))
+print('Element LevelId: {}'.format(e_level_id.Name))
 print('Wall WallType: {}'.format(e_wall_type))
 print('Wall Width: {}'.format(e_width))
