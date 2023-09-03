@@ -3,6 +3,8 @@
 __title__ = 'Element Information'
 __doc__   = 'Показывает информацию об элементе'
 
+import sys
+
 # ╦╔╦╗╔═╗╔═╗╦═╗╔╦╗
 # ║║║║╠═╝║ ║╠╦╝ ║
 # ╩╩ ╩╩  ╚═╝╩╚═ ╩ IMPORT
@@ -37,9 +39,10 @@ app   = __revit__.Application
 with forms.WarningBar(title='Выберите элемент:'):
     element = revit.pick_element()
 element_type = type(element)
-print(element)
-print(element_type)
 
+if element_type != Wall:
+    print('Нужно было выбрать стену')
+    sys.exit()
 # Get information
 # ===============================================
 e_cat         = element.Category.Name
