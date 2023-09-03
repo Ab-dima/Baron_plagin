@@ -10,7 +10,7 @@ __doc__   = 'Показывает информацию об элементе'
 #Regular + Autodesk
 import clr
 from Autodesk.Revit.DB import *
-from pyrevit import revit
+from pyrevit import forms
 
 # ╦  ╦╔═╗╦═╗╦╔═╗╔╗ ╦  ╔═╗╔═╗
 # ╚╗╔╝╠═╣╠╦╝║╠═╣╠╩╗║  ║╣ ╚═╗
