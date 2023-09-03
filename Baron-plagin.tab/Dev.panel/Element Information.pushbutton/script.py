@@ -41,8 +41,8 @@ with forms.WarningBar(title='Выберите элемент:'):
 element_type = type(element)
 
 if element_type != Wall:
-    print('Нужно было выбрать стену')
-    sys.exit()
+    forms.alert('Тебе нужно было выбрать стену.', exitscript=True)
+    
 # Get information
 # ===============================================
 e_cat         = element.Category.Name
